@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Task-2</title>
     <style>
-        div{
-            list-style-type: none;
-            position:fixed
-            top: 10;
-            margin: 0;
-            padding: 0px;
-            overflow: hidden;
-            background-color: lightgray;
+        #id1{
+            text-align: right;
+            
         }
-        li{
-            float: left;
-            border-right: 1px solid blue;
-        }
-        li,a{
-            display: block;
-            color: blue;
-            font-size: 20px;
-            text-align: center;
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-        .home{
-            padding-left: 500px;
-            list-style-type: none;
-            background-color: grey;
-        }
-        .home1{
-            background-color: yellowgreen;
-            color: white;
-        }
-        .hor{
-            background-color: lightgray;
+        .navbar {
+            width: 200px;
+            background-color: lightblue;
+            padding: 20px;
+
         }
 
+        .active {
+            background-color: rgb(241, 132, 37);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar a {
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            color: rgb(9, 76, 184);
+        }
+
+        .navbar a:hover {
+            background-color: lightgray;
+        }
+        ul,
+        li {
+            
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar1 {
+            text-align: right;
+            background-color: gray;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .navbar1 a {
+            text-align: right;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: rgb(19, 22, 218);
+            background-color: lightgray;
+            border-right: 1px solid black;
+        }
+
+        .navbar1 a.active {
+            background-color: gray;
+        }
     </style>
 </head>
+
 <body>
-    <table>
-        <tr>
-            <td>
-                <h3>Horizontal navigation Bar</h3>
-                <ul>
-                    <div class="hor">
-                        <li><a href="./Index.html" class="home">Home</a></li>
-                        <li><a href="./Index.html">Java</a></li>
-                        <li><a href="./Index.html">CSS</a></li>
-                        <li><a href="./Index.html">HTML</a></li>
-                        <li><a href="./Index.html">BootStrap</a></li>
-                    </div>
-                </ul>
-            </td>
-            <td>
-                <h3>Verticle Navigation Bar</h3>
-                <li class="ver">
-                    <a class="home1" href="./Index.html" class="home">Home</a>
-                    <a href="./Index.html">Java</a>
-                    <a href="./Index.html">CSS</a>
-                    <a href="./Index.html">HTML</a>
-                    <a href="./Index.html">BootStrap</a>
-                </li>
-            </td>
-        </tr>
-    </table>
+    <div class="navbar">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="navbar1" id="id1">
+        <a class="active" href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+    </div>
 </body>
+
 </html>
