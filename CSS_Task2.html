@@ -17,10 +17,6 @@
 
         }
 
-        .active {
-            background-color: rgb(241, 132, 37);
-        }
-
         .navbar ul {
             list-style-type: none;
             padding: 0;
@@ -34,7 +30,7 @@
         }
 
         .navbar a:hover {
-            background-color: lightgray;
+            background-color: rgb(241, 132, 37);
         }
         ul,
         li {
@@ -46,9 +42,16 @@
 
         .navbar1 {
             text-align: right;
-            background-color: gray;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             display: flex;
+        }
+
+        .navbar1col{
+            background-color: gray;
+        }
+
+        .navbar1 a:hover {
+            background-color: gray;
         }
 
         .navbar1 a {
@@ -60,29 +63,34 @@
             border-right: 1px solid black;
         }
 
-        .navbar1 a.active {
-            background-color: gray;
-        }
     </style>
 </head>
 
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Java</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">Bootstrap</a></li>
-        </ul>
-    </div>
-    <br>
-    <div class="navbar1" id="id1">
-        <a class="active" href="#">Home</a>
-        <a href="#">Java</a>
-        <a href="#">HTML</a>
-        <a href="#">CSS</a>
-    </div>
+    <table>
+        <tr>
+            <td width="500">
+                <h3>Vertical Navigation Bar</h3>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">Bootstrap</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <h3>Horizontal Navigation Bar</h3>
+                <div class="navbar1" id="id1">
+                    <a class="active" href="#">Home</a>
+                    <a class="navbar1col" href="#">Java</a>
+                    <a class="navbar1col" href="#">HTML</a>
+                    <a class="navbar1col" href="#">CSS</a>
+                </div>
+            </td>
+        </tr>
+    </table>
 </body>
-
 </html>
